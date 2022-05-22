@@ -38,7 +38,6 @@ body{
 .site-nav .link{
     color: var(--black-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -48,6 +47,10 @@ body{
 .site-nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .current{
     color: var(--accent-color);
 }
 
@@ -91,16 +94,14 @@ body{
 }
 
 .advantage .title{
-    font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--black-text-color);
 }
 
 /* Чем мы занимаемся */
-.work .title,
-.team .title{
-    font-weight: 700;
+.section .title{
     font-size: 36px;
     line-height: 1.17;
     color: var(--black-text-color);
@@ -156,6 +157,7 @@ line-height: 1.19;
 /* filter */
 .filter .title{
     font-weight: 500;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
@@ -169,6 +171,15 @@ line-height: 1.19;
 .filter .title:focus{
     background-color: var(--accent-color);
     color: var(--white-color);
+}
+
+.filter .active{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.filter{
+    display: flex;
 }
 
 /* portfolio-list */
